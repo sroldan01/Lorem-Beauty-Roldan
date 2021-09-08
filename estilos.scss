@@ -11,34 +11,68 @@ $colorseccionrosa: hsl(6, 78%, 66%);
 $colorseccionverde: #53DCD2;
 $width: 100%;
 
-@media (max-width: 576px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: #1404ff;
+@media (max-width: 320px) {
+  .imagenNuevoLanzamiento {
+    img {
+      width: 100%;
+    }
+  }
+
+  .contenidoSubItem {
+    display: none;
+  }
+
+  .botomSubmit {
+    width: 30%;
+  }
+
+  .imgFraganciasOrden {
+    display: none;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: #00ffb3;
+@media (min-width: 321px) and (max-width: 768px) {
+  .contenidoSubItem {
+    display: none;
+  }
+
+  .imgFraganciasOrden {
+    display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: $color2;
+/* Inicio Grid Maquillaje */
+
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
+
+@media all and (min-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+/* Fin Grid Maquillaje */}
+
 
 /* Inicio CSS Genérico */
 
 /* Mapa Colores */
 
-$nombreProducto: (
-  colorProducto1: #fd1515,
+$nombreProducto: (colorProducto1: #fd1515,
   colorProducto2: #48C9B0,
   colorProducto3: #ffaeae);
 
-@each $colorProducto, $color in $nombreProducto {
+@each $colorProducto,
+$color in $nombreProducto {
   .btn--#{$colorProducto} {
     color: $color;
     text-shadow: 1px 1px 2px #000000;
@@ -71,76 +105,34 @@ a:active {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   color: $color2;
 }
 
-ul {
-  list-style-position: inside;
-  padding-top: 0px;
-  padding-right: 5px;
-  padding-bottom: 0px;
-  padding-left: 5px;
+.tituloProductos {
+  @extend .textShadow;
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
 }
 
-ol {
-  list-style-position: inside;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: center;
-}
-
-li {
-  align-content: center;
-}
-
-.seccionTabla {
+.seccionProductos {
   border-bottom-style: solid;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-table {
-  border: 0px;
-
-
-  img {
-    width: 100px;
-    height: 50 px;
-  }
-
-  th {
-    background-color: #df1d4c;
-    border: 1px solid;
-    color: #fdfefe;
-    font-size: 18px;
-    text-align: center;
-    border: 0;
-  }
-
-  td {
-    border: 1px solid;
-    padding-top: 20px;
-    padding-right: 5px;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    border-left: 0;
-    border-right: 0;
-  }
-
-  tbody tr:nth-child(odd) {
-    background-color: #ffe6e3;
-  }
-
-  tbody tr:nth-child(even) {
-    background-color: #e7fffa;
-  }
+.card-body {
+  background-color: #ffe6e3;
 }
 
-table img:hover {
-  transform: scale(1.2);
+.texto {
+  @extend .textShadow;
+  font-style: italic;
 }
-
 
 /* Fin CSS Genérico */
 

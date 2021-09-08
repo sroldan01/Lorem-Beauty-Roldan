@@ -5,22 +5,51 @@
   margin: 0;
 }
 
-@media (max-width: 576px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: #1404ff;
+@media (max-width: 320px) {
+  .imagenNuevoLanzamiento img {
+    width: 100%;
+  }
+  .contenidoSubItem {
+    display: none;
+  }
+  .botomSubmit {
+    width: 30%;
+  }
+  .imgFraganciasOrden {
+    display: none;
   }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: #00ffb3;
+@media (min-width: 321px) and (max-width: 768px) {
+  .contenidoSubItem {
+    display: none;
+  }
+  .imgFraganciasOrden {
+    display: none;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .seccionNuevoLanzamiento__h3--color {
-    color: #fd1515;
+/* Inicio Grid Maquillaje */
+@media all and (min-width: 320px) {
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
+}
+
+@media all and (min-width: 768px) {
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .grid-gallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  /* Fin Grid Maquillaje */
 }
 
 /* Inicio CSS Genérico */
@@ -61,7 +90,7 @@
   border-bottom-color: black;
 }
 
-.textShadow, .footerSuscripcionIzquierda__p, .contenidoItem h3, .contenidoItem ul li, .seccionNuevoLanzamiento div p, .seccionNuevoLanzamiento__h2, .seccionPrincipalesProductos__h2, .contenedorProductoGloss__h3, .contenedorProductoGloss__p, .contenedorProductoFragancia__h3, .contenedorProductoFragancia__p, .seccionVideosTutoriales__h2, .tituloMaquillaje, .tablaMaquillaje, .tituloFragancias, .tablaFragancias, .tituloVideosTutoriales, .seccionTutorialesMaquillaje h3, .seccionTutorialesFragancias h3, .seccionTutorialesSkincare h3, .tituloSkincare, .tablaSkincare, .tituloContacto, .carousel-caption, .carousel-caption p, .subtituloContacto, .seccionContacto-1, .seccionContacto-1 ul li, .seccionContacto-2, .info {
+.textShadow, .tituloProductos, .texto, .footerSuscripcion p, .contenidoItem h3, .contenidoItem ul li, .seccionNuevoLanzamientoTexto h2, .seccionNuevoLanzamientoTexto p, .seccionPrincipalesProductos h2, .contenedorProductoGloss h4, .contenedorProductoGloss p, .contenedorProductoFragancia h4, .contenedorProductoFragancia p, .seccionVideosTutoriales h2, .tituloFragancias, .tituloVideosTutoriales, .seccionTutoriales h3, .tituloContacto, .carousel-caption, .carousel-caption p, .subtituloContacto h3, .subtituloContacto p, .seccionContacto-1, .seccionContacto-1 ul li, .seccionContacto-2, .info {
   text-shadow: 1px 1px 4px #000000;
 }
 
@@ -80,145 +109,41 @@ a:active {
 }
 
 h2,
-h3 {
+h3,
+h4 {
   color: #fd1515;
 }
 
-ul {
-  list-style-position: inside;
-  padding-top: 0px;
-  padding-right: 5px;
-  padding-bottom: 0px;
-  padding-left: 5px;
+.tituloProductos {
+  font-size: 50px;
+  font-style: italic;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
 }
 
-ol {
-  list-style-position: inside;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  text-align: center;
-}
-
-li {
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.seccionTabla {
+.seccionProductos {
   border-bottom-style: solid;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-table {
-  border: 0px;
-}
-
-table img {
-  width: 100px;
-  height: 50 px;
-}
-
-table th {
-  background-color: #df1d4c;
-  border: 1px solid;
-  color: #fdfefe;
-  font-size: 18px;
-  text-align: center;
-  border: 0;
-}
-
-table td {
-  border: 1px solid;
-  padding-top: 20px;
-  padding-right: 5px;
-  padding-bottom: 20px;
-  padding-left: 5px;
-  border-left: 0;
-  border-right: 0;
-}
-
-table tbody tr:nth-child(odd) {
+.card-body {
   background-color: #ffe6e3;
 }
 
-table tbody tr:nth-child(even) {
-  background-color: #e7fffa;
-}
-
-table img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.texto {
+  font-style: italic;
 }
 
 /* Fin CSS Genérico */
 /* Sección Header */
-/* Inicio Header Superior */
-header {
-  width: 100%;
+.imgLogo {
+  width: 6em;
   height: auto;
-  border-bottom-style: solid;
 }
 
-.headerSuperior {
-  width: 100%;
-  height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.headerSuperior__img {
-  width: 30px;
-  height: 30px;
-  margin-right: 2%;
-  margin-top: 0.5%;
-}
-
-/* Fin Header Superior */
-/* Inicio Header Central */
-.headerCentral--tamaño {
-  width: 100%;
-  height: 98px;
-}
-
-.headerCentral--tamaño span {
-  float: left;
-  width: 20%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.headerCentral__a--aling {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.headerCentral__img--witdh {
-  width: 170px;
-  height: 100px;
-}
-
-.headerCentral__img--height {
-  height: 100px;
-}
-
-.headerCentral__img--witdh:hover {
+.imgLogo:hover {
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
 }
@@ -229,26 +154,11 @@ header {
   font-weight: 60;
   font-weight: bold;
   text-align: center;
-  font-size: 40px;
-  float: right;
-  width: 80%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  font-size: 1.8em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-shadow: 1px 1px 2px #000000;
-}
-
-/* Fin Header Central */
-/* Inicio Header Inferior */
-.nav {
-  display: inline-block;
 }
 
 .menu {
@@ -256,69 +166,50 @@ header {
   text-shadow: 1px 1px 2px #000000;
   font-style: italic;
   text-align: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ec7265), to(#53DCD2));
+  background: linear-gradient(#ec7265 30%, #53DCD2);
 }
 
 .menuPrincipalNavegable {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style-type: none;
 }
 
-.menuPrincipalNavegable ul {
-  position: absolute;
-  display: none;
-}
-
-.menuPrincipalNavegable li a {
+.menuPrincipalNavegable ul li a {
   color: #fd1515;
-  font-size: 1.5rem;
+  font-size: 1.3em;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fadbd8;
-  display: block;
-}
-
-.menuPrincipalNavegable ul li {
-  display: block;
-  background-color: #000;
-  text-align: center;
-}
-
-.nav-link {
-  color: #fd1515 !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ec7265), to(#53DCD2));
+  background: linear-gradient(#ec7265 30%, #53DCD2);
 }
 
 .navbar-brand {
   color: #fd1515 !important;
 }
 
-/* acá para el submenu */
-.menuPrincipalNavegable li:hover ul {
-  display: block;
-}
-
 .menuPrincipalNavegable li a:hover {
   color: #53DCD2;
-  background-color: #ffaeae;
 }
 
-.menuOpciones {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.navbarIcon {
+  background-image: url("archivos multimedia/menu.png");
+}
+
+nav div button {
   color: #fd1515;
 }
 
+nav {
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
 .search {
-  width: 200px;
-  height: 30px;
-  margin-right: 30px;
-  margin-top: 10px;
+  text-align: center;
 }
 
 .search input {
@@ -330,85 +221,81 @@ header {
   padding-top: 0%;
 }
 
-/* Fin Header Inferior */
 /* Sección Footer */
 footer {
-  height: 430px;
+  height: auto;
 }
 
 /* Inicio Footer Sección Suscripción */
 .footerSuscripcion {
   width: 100%;
-  height: 160px;
+  height: auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ec7265), to(#53DCD2));
   background: linear-gradient(#ec7265 30%, #53DCD2);
   border-bottom-style: solid;
 }
 
-.footerSuscripcionIzquierda {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-.footerSuscripcionIzquierda__h3 {
+.footerSuscripcion h3 {
   width: 100%;
-  height: 50%;
+  height: auto;
   font-size: 30px;
   text-shadow: 1px 1px 2px #000000;
   font-style: italic;
   text-align: center;
-  line-height: 70px;
+  line-height: 100%;
+  margin-top: 2%;
 }
 
-.footerSuscripcionIzquierda__p {
+.footerSuscripcion p {
   width: 100%;
-  height: 50%;
-  font-size: 15px;
+  height: auto;
+  font-size: 17px;
   text-align: center;
 }
 
-.footerSuscripcionDerecha {
-  width: 50%;
-  height: 35%;
-  float: right;
+.footerSuscripcion label {
+  text-align: center;
+}
+
+.ingresoMail {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.barraMail {
+  padding-bottom: 1%;
 }
 
 .email {
-  width: 400px;
-  padding: 9px;
-  margin-left: 60px;
-  margin-top: 50px;
+  width: 18em;
+  padding-top: 0.5%;
+  text-align: center;
 }
 
 .botonSubmit {
-  width: 100px;
-  height: 44.5px;
-  margin-top: -5px;
+  width: 4em;
 }
 
 /* Fin Footer Sección Suscripción */
 /* Inicio Footer Sección Servicios */
 .footerServicios {
   width: 100%;
-  height: 220px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-bottom-style: solid;
   font-style: italic;
 }
 
 .contenidoItem {
   color: #fd1515;
+  margin-right: 5%;
 }
 
 .contenidoItem h3 {
   color: #fd1515;
-  padding-left: 5px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
 .contenidoItem ul {
@@ -418,14 +305,14 @@ footer {
 
 .contenidoItem ul li {
   padding-bottom: 2px;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 /* Fin Footer Sección Servicios */
 /* Inicio Footer Sección Redes Sociales */
 .footerRedes {
   width: 100%;
-  height: 50px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,26 +320,24 @@ footer {
 
 .footerRedesIzquierda {
   width: 50%;
-  height: 100%;
+  height: auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #53DCD2), to(#ec7265));
   background: linear-gradient(#53DCD2 20%, #ec7265);
 }
 
-.footerRedesIzquierda__p {
+.footerRedesIzquierda p {
   padding-left: 5%;
   padding-top: 1%;
   font-size: 15px;
   font-style: italic;
+  font-weight: bold;
 }
 
 .footerRedesDerecha {
   width: 50%;
-  height: 100%;
+  height: auto;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #53DCD2), to(#ec7265));
   background: linear-gradient(#53DCD2 20%, #ec7265);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -471,154 +356,137 @@ footer {
 /* Página Inicial */
 /* Inicio Sección Nuevo Lanzamiento */
 .seccionNuevoLanzamiento {
-  background-color: #ec7265;
-  width: 100%;
-  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "imagenNuevoLanzamiento seccionNuevoLanzamientoTexto" "imagenNuevoLanzamiento seccionNuevoLanzamientoTexto";
   border-bottom-style: solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.seccionNuevoLanzamiento div {
+.imagenNuevoLanzamiento {
+  max-width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: imagenNuevoLanzamiento;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.seccionNuevoLanzamiento div p {
-  font-size: 21px;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+.imagenNuevoLanzamiento img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
-.seccionNuevoLanzamientoImagen--width {
-  width: 100%;
+.seccionNuevoLanzamientoTexto {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: seccionNuevoLanzamientoTexto;
 }
 
-.seccionNuevoLanzamientoImagen__img--height {
-  height: 498px;
-}
-
-.seccionNuevoLanzamiento img:hover {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-
-.seccionNuevoLanzamiento__h2 {
-  font-size: 50px;
+.seccionNuevoLanzamientoTexto h2 {
+  font-size: 3em;
   font-style: italic;
-  padding-top: 15%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.seccionNuevoLanzamientoTexto p {
+  font-size: 1.313em;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* Fin Sección Nuevo Lanzamiento */
 /* Inicio Sección Productos Principales */
 .seccionPrincipalesProductos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas: "tituloProductosPrincipales tituloProductosPrincipales" "contenedorProductoGloss contenedorProductoFragancia";
   background-color: #ec7265;
-  width: 100%;
-  height: 800px;
   border-bottom-style: solid;
-  position: relative;
 }
 
-.seccionPrincipalesProductos__h2 {
-  font-size: 45px;
+.seccionPrincipalesProductos h2 {
+  font-size: 2.813em;
   font-style: italic;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 35%;
+  text-align: center;
 }
 
-.contenedorImagenesPrincipales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.tituloProductosPrincipales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tituloProductosPrincipales;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .contenedorProductoGloss {
-  width: 40%;
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contenedorProductoGloss;
 }
 
-.contenedorProductoGloss__img {
-  width: 480px;
-  height: 500px;
+.contenedorProductoGloss img {
+  max-width: 50%;
+  height: auto;
   display: block;
   margin: auto;
   border-style: outset;
   border-color: #da1540;
 }
 
-.contenedorProductoGloss__h3 {
+.contenedorProductoGloss h4 {
   text-align: center;
-  font-size: 35px;
+  font-size: 1.6em;
   font-style: italic;
   padding-top: 3%;
 }
 
-.contenedorProductoGloss__p {
+.contenedorProductoGloss p {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125em;
   padding-right: 20%;
   padding-left: 20%;
   padding-top: 2%;
 }
 
 .contenedorProductoFragancia {
-  width: 50%;
-  height: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: contenedorProductoFragancia;
 }
 
-.contenedorProductoFragancia__img {
-  width: 65%;
-  height: 500px;
+.contenedorProductoFragancia img {
+  max-width: 50%;
+  height: auto;
   display: block;
   margin: auto;
   border-style: outset;
   border-color: #da1540;
 }
 
-.contenedorProductoFragancia__h3 {
+.contenedorProductoFragancia h4 {
   text-align: center;
-  font-size: 35px;
+  font-size: 1.6em;
   font-style: italic;
   padding-top: 3%;
 }
 
-.contenedorProductoFragancia__p {
+.contenedorProductoFragancia p {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125em;
   padding-right: 20%;
   padding-left: 20%;
   padding-top: 2%;
@@ -628,6 +496,13 @@ footer {
 /* Inicio Sección Videos Tutoriales */
 .seccionVideosTutoriales {
   border-bottom-style: solid;
+}
+
+.seccionVideosTutoriales h2 {
+  font-size: 2.813em;
+  padding-top: 3%;
+  text-align: center;
+  font-style: italic;
 }
 
 .seccionVideosTutoriales div {
@@ -648,183 +523,56 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.seccionVideosTutoriales__h2 {
-  font-size: 45px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 39%;
-  font-style: italic;
+  margin-top: 3%;
 }
 
 /* Fin Sección Videos Tutoriales */
 /* Página Maquillaje */
-.tituloMaquillaje {
-  font-size: 50px;
-  font-style: italic;
-  padding-top: 2%;
-  padding-left: 5%;
-  padding-bottom: 2%;
-}
-
 /* Inicio Grid */
-.gridMaquillaje {
-  width: 90%;
-  height: auto;
-  background-color: #df1d4c;
+.grid-gallery {
   display: -ms-grid;
   display: grid;
-  margin-left: 5%;
-  margin-bottom: 5%;
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
 }
 
-.item {
-  min-height: 250px;
-  min-width: 200px;
-  background-color: #a7092b;
-  border: 1px solid #b40a43;
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
 }
 
-.item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-  -webkit-filter: hue-rotate(200deg);
-          filter: hue-rotate(200deg);
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
-.imagen1 {
-  grid-area: "item1";
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background-image: url("archivos multimedia/grids/imagen1.JPG");
-  background-position: center;
-  background-size: cover;
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
 }
 
-.imagen2 {
-  grid-area: "item2";
-  background-image: url("archivos multimedia/grids/imagen3.jpg");
-  background-size: cover;
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
 }
 
-.imagen3 {
-  grid-area: "item3";
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 5;
-  background-image: url("archivos multimedia/grids/imagen2.jpg");
-  background-size: cover;
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
-.imagen4 {
-  grid-area: "item4";
-  -ms-grid-row: 2;
-  grid-row: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  background-image: url("archivos multimedia/grids/imagen4.jpg");
-  background-size: cover;
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
 }
 
-.imagen5 {
-  grid-area: "item5";
-  background-image: url("archivos multimedia/grids/imagen5.jpg");
-  background-size: cover;
-}
-
-.imagen6 {
-  grid-area: "item6";
-  background-image: url("archivos multimedia/grids/imagen8.png");
-  background-size: cover;
-}
-
-.imagen7 {
-  grid-area: "item7";
-  background-image: url("archivos multimedia/grids/imagen7.jpg");
-  background-size: cover;
-}
-
-.imagen8 {
-  grid-area: "item8";
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  grid-column-end: 5;
-  background-image: url("archivos multimedia/grids/imagen6.png");
-  background-size: cover;
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Fin Grid */
-/* Inicio Tabla Maquillaje */
-.tablaMaquillaje {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.producto-gloss {
-  background-image: url("archivos multimedia/imagenes Maquillaje/gloss.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.producto-lipstick {
-  background-image: url("archivos multimedia/imagenes Maquillaje/lipstick.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.producto-sombras {
-  background-image: url("archivos multimedia/imagenes Maquillaje/sombras.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.producto-blush {
-  background-image: url("archivos multimedia/imagenes Maquillaje/blush.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tablaMaquillaje td:nth-child(2) {
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.tablaMaquillaje td:nth-child(3) {
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-.tablaMaquillaje td:nth-child(4) {
-  font-size: 0.9rem;
-  list-style: url("archivos multimedia/lapiz-labial.png");
-  width: 8%;
-}
-
-.tablaMaquillaje td:nth-child(5) {
-  font-size: 0.9rem;
-}
-
-.tablaMaquillaje td:nth-child(6) {
-  text-align: center;
-  font-size: 1rem;
-  width: 10%;
-}
-
-/* Fin Tabla Maquillaje */
 /* Página Fragancias */
 .tituloFragancias {
   font-size: 50px;
@@ -862,63 +610,6 @@ footer {
 }
 
 /* Fin Sección Fragancias Bucle */
-/* Inicio Tabla Fragancias */
-.tablaFragancias {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.fragancia-Girl {
-  background-image: url("archivos multimedia/imagenes fragancias/Girl.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.fragancia-Jasmine {
-  background-image: url("archivos multimedia/imagenes fragancias/Jasmine.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.fragancia-LaBelle {
-  background-image: url("archivos multimedia/imagenes fragancias/LaBelle.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.fragancia-Olympea {
-  background-image: url("archivos multimedia/imagenes fragancias/Olympea.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tablaFragancias td:nth-child(2) {
-  text-align: center;
-  font-size: 0.9rem;
-  width: 15%;
-}
-
-.tablaFragancias td:nth-child(3) {
-  text-align: center;
-  font-size: 0.9rem;
-  width: 40%;
-}
-
-.tablaFragancias td:nth-child(4) {
-  text-align: left;
-  font-size: 0.9rem;
-  list-style: square inside url("archivos multimedia/perfume.png");
-  list-style-position: outside;
-  width: 15%;
-}
-
-.tablaFragancias td:nth-child(5) {
-  text-align: center;
-  font-size: 1rem;
-  width: 10%;
-}
-
-/* Fin Tabla Fragancias */
 /* Página Videos Tutoriales */
 .seccionTutoriales-1 {
   background-color: #f08f84;
@@ -932,18 +623,6 @@ footer {
   background-color: #f8c9c4;
 }
 
-.seccionVideosTutoriales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-
 .tituloVideosTutoriales {
   font-size: 50px;
   font-style: italic;
@@ -952,138 +631,33 @@ footer {
   padding-bottom: 1%;
 }
 
-/* Inicio Sección Videos de Maquillaje */
-.seccionTutorialesMaquillaje {
+.seccionTutoriales {
   border-bottom-style: solid;
   border-top-style: solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.seccionTutorialesMaquillaje h3 {
-  text-align: center;
-  font-size: 35px;
-  font-style: italic;
-  padding-top: 6%;
-}
-
-/* Fin Sección Videos de Maquillaje */
-/* Inicio Sección Videos de Fragancias */
-.seccionTutorialesFragancias {
-  border-bottom-style: solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.seccionTutorialesFragancias h3 {
-  text-align: center;
-  font-size: 35px;
-  font-style: italic;
-  padding-top: 6%;
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-}
-
-/* Fin Sección Videos de Fragancias */
-/* Inicio Sección Videos de Skincare */
-.seccionTutorialesSkincare {
-  border-bottom-style: solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.seccionTutorialesSkincare h3 {
-  text-align: center;
-  font-size: 35px;
-  font-style: italic;
-  padding-top: 6%;
-}
-
-/* Fin Sección Videos de Skincare */
-/* Página Skincare */
-.tituloSkincare {
-  font-size: 50px;
-  font-style: italic;
   padding-top: 2%;
-  padding-left: 5%;
-  padding-bottom: 2%;
 }
 
-/* Inicio Tabla Skincare */
-.tablaSkincare {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.skincare-aguaMicelar {
-  background-image: url("archivos multimedia/imagenes skincare/aguaMicelar.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.skincare-exfoliante {
-  background-image: url("archivos multimedia/imagenes skincare/exfoliante.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.skincare-máscaraFacial {
-  background-image: url("archivos multimedia/imagenes skincare/máscaraFacial.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.skincare-toallasDesmaquillantes {
-  background-image: url("archivos multimedia/imagenes skincare/toallasDesmaquillantes.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.tablaSkincare td:nth-child(1) {
+.seccionTutoriales h3 {
   text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
+  font-size: 35px;
   font-style: italic;
+  height: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #ec7265), to(#53DCD2));
+  background: linear-gradient(#ec7265 30%, #53DCD2);
 }
 
-.tablaSkincare td:nth-child(2) {
-  text-align: center;
-  font-size: 0.9rem;
-  width: 25%;
+.videosTutoriales {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.tablaSkincare td:nth-child(3) {
-  text-align: center;
-  font-size: 0.9rem;
-  width: 40%;
+.videosTutoriales iframe {
+  margin-top: 5%;
 }
 
-.tablaSkincare td:nth-child(4) {
-  text-align: center;
-  font-size: 1rem;
-  width: 10%;
-}
-
-/* Fin Tabla Skincare */
 /* Página Contacto */
 .seccionContacto-1 {
   background-color: #7de5dd;
@@ -1108,38 +682,46 @@ footer {
 /* Inicio Carousel */
 .carousel-caption {
   color: #fd1515;
-  background-color: #f6f6f6;
-  font-size: 100px;
   font-style: italic;
 }
 
 .carousel-caption p {
   color: #fd1515;
-  background-color: #f6f6f6;
-  font-size: 30px;
+  font-size: 50px;
   font-style: italic;
 }
 
 /* Fin Carousel */
+/* Inicio Sección Subtitulo Contacto */
 .subtituloContacto {
+  background-color: #ec7265;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.subtituloContacto h3 {
   font-size: 40px;
   font-style: italic;
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: #ec7265;
-  margin: 0%;
 }
 
-/* Inicio Sección Datos Contacto */
+.subtituloContacto p {
+  font-style: italic;
+  text-align: center;
+}
+
+/* Fin Sección Subtitulo Contacto */
+/* Inicio Sección Contacto - Datos de la Empresa */
 .seccionContacto-1 {
-  border-top: solid;
   border-bottom: solid;
 }
 
 .seccionContacto-1 ul {
   list-style-type: none;
   text-align: center;
+  padding-left: 0%;
 }
 
 .seccionContacto-1 ul li {
@@ -1148,49 +730,33 @@ footer {
   line-height: 50px;
 }
 
-.seccionContacto-2 p {
-  font-size: 25px;
-  font-style: italic;
-  text-align: center;
-  line-height: 50px;
+/* Fin Sección Contacto - Datos de la Empresa */
+/* Inicio Sección Contacto - Datos del Cliente */
+.seccionContacto-2 {
+  border-bottom: solid;
 }
 
-.seccionContacto-2 form {
-  padding-left: 10%;
-  border-bottom: solid;
+.seccionContacto-2 p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  line-height: 30px;
+}
+
+.seccionContacto-2 div {
+  min-width: 320px;
+}
+
+.seccionContacto-2 div form {
   font-size: 21px;
   font-style: italic;
   line-height: 50px;
-  padding-bottom: 1%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.tipo1 {
-  width: 400px;
-  height: 30px;
-  margin-left: 2%;
-  font-size: 1rem;
-}
-
-.tipo2 input {
-  margin-left: 5%;
-}
-
-.tipo2 span {
-  margin-left: 2%;
-}
-
-.tipo3 {
-  width: 80%;
-  height: 300px;
-  font-size: 1rem;
-}
-
-.tipo4 {
-  width: 200px;
-  height: 44.5px;
-}
-
-/* Fin Sección Datos Contacto */
+/* Fin Sección Contacto - Datos del Cliente */
 .Ooops {
   text-shadow: 2px 2px 5px #000000;
   color: #fd1515;

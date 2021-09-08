@@ -1,59 +1,58 @@
 /* Sección Footer */
 
 footer {
-  height: 430px;
+  height: auto;
 }
 
 /* Inicio Footer Sección Suscripción */
 
 .footerSuscripcion {
   width: 100%;
-  height: 160px;
+  height: auto;
   background: linear-gradient($colorseccionrosa 30%, $colorseccionverde);
   border-bottom-style: solid;
+
+  h3 {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px #000000;
+    font-style: italic;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 2%;
+  }
+
+  p {
+    @extend .textShadow;
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  label {
+    text-align: center;
+  }
 }
 
-.footerSuscripcionIzquierda {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-.footerSuscripcionIzquierda__h3 {
-  width: 100%;
-  height: 50%;
-  font-size: 30px;
-  text-shadow: 1px 1px 2px #000000;
-  font-style: italic;
+.ingresoMail {
   text-align: center;
-  line-height: 70px;
+  margin-bottom: 2%;
 }
 
-.footerSuscripcionIzquierda__p {
-  @extend .textShadow;
-  width: 100%;
-  height: 50%;
-  font-size: 15px;
-  text-align: center;
-}
-
-.footerSuscripcionDerecha {
-  width: 50%;
-  height: 35%;
-  float: right;
+.barraMail {
+  padding-bottom: 1%;
 }
 
 .email {
-  width: 400px;
-  padding: 9px;
-  margin-left: 60px;
-  margin-top: 50px;
+  width: 18em;
+  padding-top: 0.5%;
+  text-align: center;
 }
 
 .botonSubmit {
-  width: 100px;
-  height: 44.5px;
-  margin-top: -5px;
+  width: 4em;
 }
 
 /* Fin Footer Sección Suscripción */
@@ -62,22 +61,20 @@ footer {
 
 .footerServicios {
   width: 100%;
-  height: 220px;
+  height: auto;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-bottom-style: solid;
   font-style: italic;
 }
 
 .contenidoItem {
   color: $color2;
+  margin-right: 5%;
 
   h3 {
     @extend .textShadow;
     color: $color2;
-    padding-left: 5px;
-    margin-bottom: 10px;
+    text-align: center;
   }
 
   ul {
@@ -87,7 +84,7 @@ footer {
     li {
       @extend .textShadow;
       padding-bottom: 2px;
-      font-size: 1.2rem;
+      font-size: 1.2em;
     }
   }
 }
@@ -98,28 +95,28 @@ footer {
 
 .footerRedes {
   width: 100%;
-  height: 50px;
+  height: auto;
   display: flex;
 }
 
 .footerRedesIzquierda {
   width: 50%;
-  height: 100%;
+  height: auto;
   background: linear-gradient($colorseccionverde 20%, $colorseccionrosa);
-}
 
-.footerRedesIzquierda__p {
-  padding-left: 5%;
-  padding-top: 1%;
-  font-size: 15px;
-  font-style: italic;
+  p {
+    padding-left: 5%;
+    padding-top: 1%;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+  }
 }
 
 .footerRedesDerecha {
   width: 50%;
-  height: 100%;
+  height: auto;
   background: linear-gradient($colorseccionverde 20%, $colorseccionrosa);
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 

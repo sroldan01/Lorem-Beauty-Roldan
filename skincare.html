@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Skincare Lorem Beauty, cuidados para cualquier tipo de piel.">
-    <meta name="keywords" content="skincare, cuidados de la piel, limpieza facial, desmaquillante, máscara facial, toallas desmaquillantes, exfoliante">
-    <meta name="title" content="Lorem Beauty | Skincare">
-    <meta name="author" content="Sabrina Roldan">
-    <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <meta name="revisit-after" content="2 days">
-    <meta http-equiv="Content-Language" content="Es">
-    <meta name="distribution" content="Global">
-    <meta name="city" content="Buenos Aires">
-    <meta name="country" content="Argentina">
+    <meta
+      name="description"
+      content="Skincare Lorem Beauty, cuidados para cualquier tipo de piel."
+    />
+    <meta
+      name="keywords"
+      content="skincare, cuidados de la piel, limpieza facial, desmaquillante, máscara facial, toallas desmaquillantes, exfoliante"
+    />
+    <meta name="title" content="Lorem Beauty | Skincare" />
+    <meta name="author" content="Sabrina Roldan" />
+    <meta name="ROBOTS" content="INDEX, FOLLOW" />
+    <meta name="revisit-after" content="2 days" />
+    <meta http-equiv="Content-Language" content="Es" />
+    <meta name="distribution" content="Global" />
+    <meta name="city" content="Buenos Aires" />
+    <meta name="country" content="Argentina" />
     <link rel="stylesheet" href="estilos.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -28,271 +34,236 @@
     <title>🗢Lorem Beauty | Skincare</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <div class="container-fluid">
-        <!-- Header superior -->
-        <div class="headerSuperior container-fluid">
-          <img
-            class="headerSuperior__img"
-            src="archivos multimedia/usuario.png"
-          />
-          <img
-            class="headerSuperior__img"
-            src="archivos multimedia/corazon.png"
-          />
-          <form class="d-flex search">
-            <input type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-danger" type="submit">Search</button>
-          </form>
-        </div>
-        <!-- Header central -->
-        <div class="headerCentral--tamaño">
-          <span
-            ><a class="headerCentral__a--aling" href="index.html" title>
-              <img
-                class="headerCentral__img--witdh headerCentral__img--height"
-                src="archivos multimedia/logo.gif"
-                alt="logo" /></a
-          ></span>
-          <h1 id="nombreEmpresa">Lorem Beauty</h1>
-        </div>
-        <!-- Header inferior -->
-        <div>
-        <nav class="navbar navbar-expand-md menu" aria-label="Fourth navbar example">
-          <div class="container-fluid">
-            <a class="navbar-brand">Elige una sección --></a>
+    <header>
+      <nav class="navbar sticky-top navbar-expand-xl menu">
+        <div class="container-fluid">
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarsExample04"
-            aria-controls="navbarsExample04"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon navbarIcon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0 menuPrincipalNavegable">
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle menuOpciones"
-                  href="#"
-                  id="dropdown04"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                  >Maquillaje</a
-                >
-                <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                  <li><a class="dropdown-item" href="maquillaje.html">Labios</a></li>
-                  <li><a class="dropdown-item" href="maquillaje.html">Ojos</a></li>
-                  <li><a class="dropdown-item" href="maquillaje.html">Rostro</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                class="nav-link dropdown-toggle menuOpciones"
-                href="#"
-                id="dropdown04"
-                data-toggle="dropdown"
-                aria-expanded="false"
-                  >Fragancias</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="fragancias.html">Suaves</a></li>
-                  <li><a class="dropdown-item" href="fragancias.html"
-                    >Intermedias</a
-                  ></li>
-                  <li><a class="dropdown-item" href="fragancias.html">Fuertes</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                class="nav-link dropdown-toggle menuOpciones"
-                href="#"
-                id="dropdown04"
-                data-toggle="dropdown"
-                aria-expanded="false"
-                  >Skincare</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="skincare.html">Limpieza</a></li>
-                  <li><a class="dropdown-item" href="skincare.html">Mascarillas</a></li>
-                  <li><a class="dropdown-item" href="skincare.html">Complementos</a></li>
-                </ul>
-              </li>
-
+          <a class="d-flex justify-content-end" href="index.html" title>
+            <img
+              class="imgLogo"
+              src="archivos multimedia/logo.gif"
+              alt="logo"
+            />
+          </a>
+          <a class="navbar-brand" id="nombreEmpresa" href="index.html"
+            >Lorem Beauty</a
+          >
+          <div
+            class="collapse navbar-collapse menuPrincipalNavegable"
+            id="navbarTogglerDemo03"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link menuOpciones" href="videosTutoriales.html"
+                <a class="nav-link" href="maquillaje.html">Maquillaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fragancias.html">Fragancias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skincare.html">Skincare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="videosTutoriales.html"
                   >Videos tutoriales</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link menuOpciones" href="contacto.html"
-                  >Contacto</a
-                >
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
             </ul>
+            <form class="d-flex search">
+              <input
+                class="form-control me-2 search1"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn btn-danger" type="submit">Search</button>
+            </form>
           </div>
         </div>
-        </nav>
-      </div>
+      </nav>
     </header>
 
-    <h2 class="tituloSkincare">Skincare</h2>
+    <h2 class="tituloProductos">Skincare</h2>
 
-    <section class="seccionTabla">
-      <table
-        class="tablaSkincare lead"
-        border="4"
-        cellpadding="6"
-        cellspacing="3"
-      >
-        <tr>
-          <th>Nombre del producto</th>
-          <th>Tipo de producto</th>
-          <th>Descripción</th>
-          <th>Precio</th>
-        </tr>
-        <tr>
-          <td class="skincare-aguaMicelar btn--colorProducto3">
-            Agua Micelar Desmaquillante Lorem Purified Skin
-          </td>
-          <td>Agua Micelar Desmaquillante - 200 ml</td>
-          <td>
-            El agua micelar Lorem Purified Skin ofrece una limpieza purificadora
-            que elimina toxinas. Posee 7 beneficios: limpia, desmaquilla, reduce
-            la oleosidad, desobstruye los poros, purifica, refresca y suaviza la
-            piel.
-          </td>
-          <td>
-            $633,50
-            <input
-              class="btn btn-danger"
-              type="button"
-              value="Comprar online"
+    <section class="seccionProductos">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col d-flex justify-content-center">
+          <div class="card h-100" style="width: 18rem">
+            <img
+              src="archivos multimedia/imagenes skincare/aguaMicelar.jpg"
+              class="card-img-top"
+              alt="Agua Micelar Desmaquillante Lorem Purified Skin"
             />
-          </td>
-        </tr>
-        <tr>
-          <td class="skincare-exfoliante btn--colorProducto3">
-            Exfoliante Facial Lorem Purified Skin
-          </td>
-          <td>Exfoliante Facial - 100 g</td>
-          <td>
-            El exfoliante facial Lorem Purified Skin ofrece una limpieza
-            purificadora y profunda que elimina las impurezas y toxinas de la
-            piel, desobstruye los poros y reduce la oleosidad de la piel, sin
-            dejar sensación de resequedad.
-          </td>
-          <td>
-            $621,50
-            <input
-              class="btn btn-danger"
-              type="button"
-              value="Comprar online"
+            <div class="card-body position-relative">
+              <h5 class="card-title btn--colorProducto3">
+                Agua Micelar Desmaquillante Lorem Purified Skin
+              </h5>
+              <p class="card-text texto">
+                El agua micelar Lorem Purified Skin ofrece una limpieza
+                purificadora que elimina toxinas. Posee 7 beneficios: limpia,
+                desmaquilla, reduce la oleosidad, desobstruye los poros,
+                purifica, refresca y suaviza la piel.
+              </p>
+              <button
+                type="button"
+                class="position-absolute bottom-0 end-0 btn btn-danger"
+              >
+                Comprar online
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card h-100" style="width: 18rem">
+            <img
+              src="archivos multimedia/imagenes skincare/exfoliante.jpg"
+              class="card-img-top"
+              alt="Exfoliante Facial Lorem Purified Skin"
             />
-          </td>
-        </tr>
-        <tr>
-          <td class="skincare-máscaraFacial btn--colorProducto3">
-            Máscara Facial Lorem Skin Oil Control
-          </td>
-          <td>Máscara Facial - 10 ml</td>
-          <td>
-            La mascarilla facial Lorem Skin Oil Control, con ácido salicílico y
-            ácido glicólico, reduce la oleosidad de la piel ayudado a prevenir y
-            combatir impurezas.
-          </td>
-          <td>
-            $219,00
-            <input
-              class="btn btn-danger"
-              type="button"
-              value="Comprar online"
+            <div class="card-body">
+              <h5 class="card-title btn--colorProducto3">
+                Exfoliante Facial Lorem Purified Skin
+              </h5>
+              <p class="card-text texto">
+                El exfoliante facial Lorem Purified Skin ofrece una limpieza
+                purificadora y profunda que elimina las impurezas y toxinas de
+                la piel, desobstruye los poros y reduce la oleosidad de la piel,
+                sin dejar sensación de resequedad.
+              </p>
+              <button
+                type="button"
+                class="position-absolute bottom-0 end-0 btn btn-danger"
+              >
+                Comprar online
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card h-100" style="width: 18rem">
+            <img
+              src="archivos multimedia/imagenes skincare/máscaraFacial.jpg"
+              class="card-img-top"
+              alt="Máscara Facial Lorem Skin Oil Control"
             />
-          </td>
-        </tr>
-        <tr>
-          <td class="skincare-toallasDesmaquillantes btn--colorProducto3">
-            Toallas Desmaquillantes Lorem x3
-          </td>
-          <td>Toallas Desmaquillantes - 3 unidades</td>
-          <td>
-            Toallas ultra suaves para remover maquillaje. Sólo humedecer y
-            retira todo el maquillaje del rostro. Ecológica por ser reutilizable
-            y reemplazar el uso de algodón descartable.
-          </td>
-          <td>
-            $500,00
-            <input
-              class="btn btn-danger"
-              type="button"
-              value="Comprar online"
+            <div class="card-body">
+              <h5 class="card-title btn--colorProducto3">
+                Máscara Facial Lorem Skin Oil Control
+              </h5>
+              <p class="card-text texto">
+                La mascarilla facial Lorem Skin Oil Control, con ácido
+                salicílico y ácido glicólico, reduce la oleosidad de la piel
+                ayudado a prevenir y combatir impurezas.
+              </p>
+              <button
+                type="button"
+                class="position-absolute bottom-0 end-0 btn btn-danger"
+              >
+                Comprar online
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="archivos multimedia/imagenes skincare/toallasDesmaquillantes.jpg"
+              class="card-img-top"
+              alt="Toallas Desmaquillantes Lorem x3"
             />
-          </td>
-        </tr>
-      </table>
+            <div class="card-body">
+              <h5 class="card-title btn--colorProducto3">
+                Toallas Desmaquillantes Lorem x3
+              </h5>
+              <p class="card-text texto">
+                Una fragancia floral y fresca creada por Lorem para una mujer
+                radiante y segura de sí misma. Lorem Olympea deja en su estela
+                una firma dulce y delicada. Una fragancia romántica y moderna
+                que sabe cómo destacar.
+              </p>
+              <button
+                type="button"
+                class="position-absolute bottom-0 end-0 btn btn-danger"
+              >
+                Comprar online
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <br />
     </section>
 
     <footer>
       <!-- Suscripcion -->
       <div class="footerSuscripcion container-fluid">
-        <div class="footerSuscripcionIzquierda">
-          <h3 class="footerSuscripcionIzquierda__h3">
-            Suscríbase a nuestro newsletter
-          </h3>
-          <p class="lead footerSuscripcionIzquierda__p">
+        <div class="row">
+          <h3>Suscríbase a nuestro newsletter</h3>
+          <p class="lead">
             Reciba las últimas noticias de nuestros productos antes que nadie,
             estilos para inspirarte y videotutoriales.
           </p>
         </div>
-        <div class="footerSuscripcionDerecha">
-          <label for="email"></label>
-          <input
-            class="email"
-            type="email"
-            name="email"
-            placeholder="Direccion de correo electronico"
-          />
-          <input
-            class="botonSubmit btn btn-danger"
-            type="submit"
-            value="Enviar"
-          />
+        <div class="row ingresoMail">
+          <div class="barraMail">
+            <label for="email"></label>
+            <input
+              class="email"
+              type="email"
+              name="email"
+              placeholder="ingresa tu eMail"
+            />
+          </div>
+          <div>
+            <input
+              class="botonSubmit btn btn-danger"
+              type="submit"
+              value="Enviar"
+            />
+          </div>
         </div>
       </div>
 
       <!-- Menu Footer -->
-      <div class="footerServicios container-fluid">
-        <div class="contenidoItem container-fluid">
+      <div
+        class="footerServicios container-fluid d-flex justify-content-center"
+      >
+        <div class="contenidoItem flex-column">
           <h3>Atención al cliente</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">Contacto</li>
-            <li class="nav-item">Envío y Devoluciones</li>
-            <li class="nav-item">Medios de pagos</li>
-            <li class="nav-item">Preguntas frecuentes</li>
+          <ul class="contenidoSubItem">
+            <li>Contacto</li>
+            <li>Envío y Devoluciones</li>
+            <li>Medios de pagos</li>
+            <li>Preguntas frecuentes</li>
           </ul>
         </div>
-        <div class="contenidoItem container">
+        <div class="contenidoItem flex-column">
           <h3>Quiénes somos</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">Nuestra historia</li>
-            <li class="nav-item">Prensa</li>
-            <li class="nav-item">Empleo</li>
+          <ul class="contenidoSubItem">
+            <li>Nuestra historia</li>
+            <li>Prensa</li>
+            <li>Empleo</li>
           </ul>
         </div>
-        <div class="contenidoItem container">
+        <div class="contenidoItem flex-column">
           <h3>Avisos legales y cookies</h3>
-          <ul class="nav flex-column">
-            <li class="nav-item">Términos y condiciones de uso</li>
-            <li class="nav-item">Política de privacidad</li>
-            <li class="nav-item">Política de cookies</li>
-            <li class="nav-item">Mapa del sitio</li>
+          <ul class="contenidoSubItem">
+            <li>Términos y condiciones de uso</li>
+            <li>Política de privacidad</li>
+            <li>Política de cookies</li>
+            <li>Mapa del sitio</li>
           </ul>
         </div>
       </div>
@@ -300,9 +271,9 @@
       <!-- Redes Sociales -->
       <div class="footerRedes container-flex">
         <div class="footerRedesIzquierda">
-          <p class="footerRedesIzquierda__p">@2021 Lorem Beauty</p>
+          <p class="lead">@2021 Lorem Beauty</p>
         </div>
-        <div class="footerRedesDerecha flex-row">
+        <div class="footerRedesDerecha flex-row d-flex justify-content-end">
           <img src="archivos multimedia/facebook.png" />
           <img src="archivos multimedia/instagram.png" />
           <img src="archivos multimedia/youtube.png" />

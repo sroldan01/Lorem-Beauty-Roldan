@@ -20,42 +20,53 @@
 .carousel-caption {
   @extend .textShadow;
   color: $color2;
-  background-color: #f6f6f6;
-  font-size: 100px;
   font-style: italic;
 
   p {
     @extend .textShadow;
     color: $color2;
-    background-color: #f6f6f6;
-    font-size: 30px;
+    font-size: 50px;
     font-style: italic;
   }
 }
 
 /* Fin Carousel */
 
+/* Inicio Sección Subtitulo Contacto */
+
 .subtituloContacto {
-  @extend .textShadow;
-  font-size: 40px;
-  font-style: italic;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
   background-color: $colorseccionrosa;
-  margin: 0%;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  h3 {
+    @extend .textShadow;
+    font-size: 40px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  p {
+    @extend .textShadow;
+    font-style: italic;
+    text-align: center;
+  }
 }
 
-/* Inicio Sección Datos Contacto */
+/* Fin Sección Subtitulo Contacto */
+
+/* Inicio Sección Contacto - Datos de la Empresa */
 
 .seccionContacto-1 {
   @extend .textShadow;
-  border-top: solid;
   border-bottom: solid;
 
   ul {
     list-style-type: none;
     text-align: center;
+    padding-left: 0%;
 
     li {
       @extend .textShadow;
@@ -66,53 +77,31 @@
   }
 }
 
+/* Fin Sección Contacto - Datos de la Empresa */
+
+/* Inicio Sección Contacto - Datos del Cliente */
+
 .seccionContacto-2 {
   @extend .textShadow;
+  border-bottom: solid;
 
   p {
-    font-size: 25px;
-
+    font-size: 20px;
     font-style: italic;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
   }
 
-  form {
-    padding-left: 10%;
-    border-bottom: solid;
-    font-size: 21px;
-    font-style: italic;
-    line-height: 50px;
-    padding-bottom: 1%;
+  div {
+    min-width: 320px;
+    form {
+      font-size: 21px;
+      font-style: italic;
+      line-height: 50px;
+      align-items: center;
+    }
   }
+  
 }
 
-.tipo1 {
-  width: 400px;
-  height: 30px;
-  margin-left: 2%;
-  font-size: 1rem;
-}
-
-.tipo2 {
-  input {
-    margin-left: 5%;
-  }
-
-  span {
-    margin-left: 2%;
-  }
-}
-
-.tipo3 {
-  width: 80%;
-  height: 300px;
-  font-size: 1rem;
-}
-
-.tipo4 {
-  width: 200px;
-  height: 44.5px;
-}
-
-/* Fin Sección Datos Contacto */
+/* Fin Sección Contacto - Datos del Cliente */
