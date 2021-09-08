@@ -18,6 +18,9 @@
   .imgFraganciasOrden {
     display: none;
   }
+  .gallery {
+    display: none;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
@@ -25,6 +28,9 @@
     display: none;
   }
   .imgFraganciasOrden {
+    display: none;
+  }
+  .gallery {
     display: none;
   }
 }
